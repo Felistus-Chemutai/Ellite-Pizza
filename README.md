@@ -1,2 +1,2 @@
 # Ellite-Pizza
-Ellite Pizza Restaurants that has been in pizza business for over 6 years now and offers a very unique atmosphere for customers in                addition to home delivery services for all pizza orders and we know that pizza is a family meal                which popular around the world and that has resulted in a large number of chains of pizza  restaurants but non of them is the best than   Ellite Pizza 
+Ellite Pizza Restaurants that has been in pizza business for over 6 years now and offers a very unique atmosphere for customers in addition to home delivery services for all pizza orders.
