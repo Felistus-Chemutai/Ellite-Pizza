@@ -109,7 +109,7 @@ $(document).ready(function(){
            console.log(price);
          break;
          case "medium":
-           price = 850;
+           price = 800;
            console.log("The price is "+price);
          break;
          case "small":
