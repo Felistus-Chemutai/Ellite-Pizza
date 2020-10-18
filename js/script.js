@@ -105,7 +105,7 @@ $(document).ready(function(){
           price =0;
         break;
         case "large":
-           price = 1200;
+           price = 1100;
            console.log(price);
          break;
          case "medium":
