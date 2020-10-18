@@ -113,7 +113,7 @@ $(document).ready(function(){
            console.log("The price is "+price);
          break;
          case "small":
-           price = 600;
+           price = 550;
            console.log(price);
          default:
            console.log("error"); 
