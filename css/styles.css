@@ -86,11 +86,11 @@ nav .navbar{
   border-radius: 10%;
   padding: 10px;
 }
-#about-us{
+#/*about-us{
   min-height: 70vh;
   align-items: center;
 
-}
+}*/
 .d-flex{
   display: flex !important;
 }
@@ -157,7 +157,7 @@ td,th{
   color: white;
 }
 .preference h2{
-  color:white;
+  color:Orange;
   text-align: left;
 }
 #your-orders{
@@ -187,7 +187,7 @@ td,th{
   padding-left: 10%;
   font-size: 28px;
 }
-#regards{
+#from{
   text-align: center;
   color: wheat;
 }

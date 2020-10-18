@@ -172,7 +172,7 @@ $(document).ready(function(){
       $("button.deliver").hide();
       $("#pizzatotal").hide();
       let deliceryamount= checkoutTotal+150;
-      console.log("You will pay sh. "+deliceryamount+" on delivery");
+      console.log("You will pay sh. "+deliveryamount+" on delivery");
       $("#totalbill").append("Your bill plus delivery fee is: "+deliveryamount);
     });
 
@@ -200,19 +200,19 @@ $(document).ready(function(){
         $(".delivery").show();
         $("button#final-order").show();
       }
-      function initMap() {
-  // The location of Ellite
-  // The map, centered at Bomet
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: Bomet,
-  });
-  // The marker, positioned at Bomet
-  const marker = new google.maps.Marker({
-    position: Bomet,
-    map: map,
-  });
-}
+//   //     function initMap() {
+//   // // The location of Ellite
+//   // // The map, centered at Bomet
+//   // const map = new google.maps.Map(document.getElementById("map"), {
+//   //   zoom: 4,
+//   //   center: Bomet,
+//   // });
+//   // // The marker, positioned at Bomet
+//   // const marker = new google.maps.Marker({
+//   //   position: Bomet,
+//   //   map: map,
+//   });
+// }
     });
    event.preventDefault();
   });
