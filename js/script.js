@@ -131,6 +131,9 @@ $(document).ready(function(){
           case "Gluten-free":
             crust_price = 180;
           break;
+          case "Silician-style"
+          crust_price  = 300;
+          break;
           default:
             console.log("No price"); 
         }
