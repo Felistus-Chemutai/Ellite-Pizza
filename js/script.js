@@ -138,7 +138,7 @@ $(document).ready(function(){
             console.log("No price"); 
         }
         let topping_value = ptopping.length*100;
-        console.log("toppins value" + topping_value);
+        console.log("toppings value" + topping_value);
         total = price + crust_price + topping_value;
         console.log(total);
 
@@ -166,7 +166,7 @@ $(document).ready(function(){
     // home delivery button
     $("button.deliver").click(function(){
       $(".pizzatable").hide();
-      $(".choise h2").hide();
+      $(".preference h2").hide();
       $(".delivery").slideDown(1000);
       $("#addedprice").hide();
       $("button.deliver").hide();
