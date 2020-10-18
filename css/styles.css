@@ -59,7 +59,6 @@ nav .navbar{
 .container{
   background-image: url(../images/back.jpg);
   background-color: solid green;
-  background-repeat: no-repeat;
 }
 .text a{
   font-size: 20px;
@@ -142,7 +141,6 @@ nav .navbar{
 }
 .order{
   background-attachment: fixed;
-  background-image: url("../images/slider2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
