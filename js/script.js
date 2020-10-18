@@ -200,6 +200,19 @@ $(document).ready(function(){
         $(".delivery").show();
         $("button#final-order").show();
       }
+      function initMap() {
+  // The location of Ellite
+  // The map, centered at Bomet
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: Bomet,
+  });
+  // The marker, positioned at Bomet
+  const marker = new google.maps.Marker({
+    position: Bomet,
+    map: map,
+  });
+}
     });
    event.preventDefault();
   });
