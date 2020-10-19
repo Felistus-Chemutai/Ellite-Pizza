@@ -140,7 +140,7 @@ nav .navbar{
   padding-bottom: 20px;
   padding-left: 6%;
 }
-.preference{
+.choice{
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -156,7 +156,7 @@ td,th{
   font-size: 20px;
   color: white;
 }
-.preference h2{
+.choice h2{
   color:Orange;
   text-align: left;
 }
