@@ -14,7 +14,7 @@ $(document).ready(function(){
   // $("button.proceed").click(function(){
   //   $("button.proceed").hide();
   //   $("#information").hide();
-  //   $("div.choise").slideDown(1000);
+  //   $("div.preferance").slideDown(1000);
   // });
   $("button.proceed").click(function(event){
    let pname = $(".name option:selected").val();
@@ -48,7 +48,7 @@ $(document).ready(function(){
       case "0":
         crust_price = 0;
       break;
-      case "Crispy":
+      case "Crispy":q
         crust_price = 200;
       break;
       case "Stuffed":
@@ -57,26 +57,23 @@ $(document).ready(function(){
       case "Gluten-free":
         crust_price = 180;
       break;
-      case "Silian-style":
-      crust_price =300;
-      break; 
       default:
         console.log("No price"); 
     }
-    let topping_value = ptopping.length*100;
-    console.log("toppins value" + topping_value);
+    let topping_value = ptopping.length*50;
+    console.log("toppings value" + topping_value);
 
     if((psize == "0") && (pcrust == "0")){
       console.log("nothing selected");
       $("button.proceed").show();
       $("#information").show();
-      $("div.choise").hide();
+      $("div.preferance").hide();
       alert("Please select pizza size and crust"); 
     }
     else{
       $("button.proceed").hide();
       $("#information").hide();
-      $("div.choise").slideDown(1000);
+      $("div.preferance").slideDown(1000);
     }
 
     total = price + crust_price + topping_value;
@@ -123,22 +120,22 @@ $(document).ready(function(){
             crust_price = 0;
           break;
           case "Crispy":
-            crust_price = 250;
+            crust_price = 200;
           break;
           case "Stuffed":
-            crust_price = 200;
+            crust_price = 150;
           break;
           case "Gluten-free":
             crust_price = 180;
           break;
-          case "Silician-style"
-          crust_price  = 300;
+          case "Silician-style":
+            crust_price = 300;
           break;
           default:
             console.log("No price"); 
         }
-        let topping_value = ptopping.length*100;
-        console.log("toppings value" + topping_value);
+        let topping_value = ptopping.length*80;
+        console.log("toppins value" + topping_value);
         total = price + crust_price + topping_value;
         console.log(total);
 
@@ -166,14 +163,14 @@ $(document).ready(function(){
     // home delivery button
     $("button.deliver").click(function(){
       $(".pizzatable").hide();
-      $(".preference h2").hide();
+      $(".choise h2").hide();
       $(".delivery").slideDown(1000);
       $("#addedprice").hide();
       $("button.deliver").hide();
       $("#pizzatotal").hide();
       let deliceryamount= checkoutTotal+150;
-      console.log("You will pay sh. "+deliveryamount+" on delivery");
-      $("#totalbill").append("Your bill plus delivery fee is: "+deliveryamount);
+      console.log("You will pay sh. "+deliceryamount+" on delivery");
+      $("#totalbill").append("Your bill plus delivery fee is: "+deliceryamount);
     });
 
     // when one clicks place order button
@@ -184,14 +181,14 @@ $(document).ready(function(){
       $(".delivery").hide();
       $("button#final-order").hide();
       let deliceryamount= checkoutTotal+150;
-      console.log("Final Bill is: "+deliveryamount);
+      console.log("Final Bill is: "+deliceryamount);
       let person = $("input#name").val();
       let phone = $("input#phone").val();
       let location = $("input#location").val();
 
       if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
   
-        $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliveryamount);
+        $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliceryamount);
         $("#totalbill").hide();
         $("#finallmessage").slideDown(1200);
       }
@@ -200,19 +197,6 @@ $(document).ready(function(){
         $(".delivery").show();
         $("button#final-order").show();
       }
-//   //     function initMap() {
-//   // // The location of Ellite
-//   // // The map, centered at Bomet
-//   // const map = new google.maps.Map(document.getElementById("map"), {
-//   //   zoom: 4,
-//   //   center: Bomet,
-//   // });
-//   // // The marker, positioned at Bomet
-//   // const marker = new google.maps.Marker({
-//   //   position: Bomet,
-//   //   map: map,
-//   });
-// }
     });
    event.preventDefault();
   });
